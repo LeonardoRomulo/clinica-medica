@@ -222,7 +222,7 @@ body {
 
 /* topo */
     body, html {
-        overflow-x: hidden ;
+        overflow-x: hidden;
     }
     .container-topo{
         width: 100%;
@@ -235,7 +235,7 @@ body {
         padding-bottom: 20px;
     }
     .menu-topo a{
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .menu-topo a:hover {
