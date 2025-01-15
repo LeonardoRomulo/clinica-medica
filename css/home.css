@@ -221,7 +221,9 @@ body {
 @media (max-width: 428px){
 
 /* topo */
-
+    body, html {
+        overflow-x: hidden ;
+    }
     .container-topo{
         width: 100%;
         display: flex;
@@ -246,6 +248,7 @@ body {
 
     .container-titulo-banner h1 {
         font-size: 20px ;
+        padding-left: 10px;
     }
 
     .container-titulo h3, .container-lista h3 {
@@ -268,6 +271,10 @@ body {
     display: flex;
     flex-direction: column;
     gap: 30px;
+}
+
+.card {
+    margin: 0;
 }
 .card figure figcaption {
     font-size: 16px;
