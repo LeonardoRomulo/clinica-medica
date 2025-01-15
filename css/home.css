@@ -265,6 +265,10 @@ body {
     display: none;
 }
 
+.container-lista ul li {
+    font-size:12px;
+}
+
     /* cards */
 .container-cards {
     width: 100%;
@@ -283,7 +287,9 @@ body {
 font-size: 14px;
 width: 130px;
 }
+
 /* contatos */
+
     .contatos iframe {
         width: 300px;
         height: 200px;
