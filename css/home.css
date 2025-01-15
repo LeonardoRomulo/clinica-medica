@@ -1,0 +1,304 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.limitar-secao {
+    max-width: 1024px;
+}
+
+body {
+    font-family: 'source sans pro', sans-serif;
+}
+
+/* Topo */
+
+.topo {
+    width: 100%;
+    background-color: #04D9D9;
+}
+
+.container-topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.menu-topo ul {
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    gap: 15px;
+}
+
+.menu-topo ul li {
+    list-style: none;
+}
+
+.menu-topo a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu-topo a:hover {
+    color: #0000008c;
+}
+
+/* conteúdo principal  */
+
+/* banner */
+
+.container-banner {
+    height: 85vh;
+    background-image: url(../assets/recepcao.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-titulo-banner {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+}
+
+.container-titulo-banner h1 {
+    color: #fff;
+    font-size: 48px;
+}
+
+/* sobre */
+
+.secao-sobre {
+    /* margin: auto; */
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-titulo {
+    padding-bottom: 40px;
+
+}
+
+.container-titulo h3 {
+    text-align: center;
+    font-size: 30px;
+    padding: 60px 0 25px 0;
+    color: #0000008c;
+}
+
+.container-titulo p {
+    max-width: 900px;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    color: #0000008c;
+}
+
+.container-descricao-clinica {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.container-lista h3 {
+    font-weight: normal;
+    font-size: 22px;
+    padding-bottom: 20px;
+    color: #0000008c;
+}
+
+.container-lista ul {
+    padding: 8PX 30px;
+    color: #0000008c;
+}
+
+.container-lista ul li {
+    padding-top: 6px;
+    font-size: 14px;
+}
+
+/* Seção especialidades */
+
+.especialidades {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    margin-left: 40px;
+    background-color: #ffffff;
+    border: 1px sooid #1d1d1d1d;
+    box-shadow: -5px 5px 5px #0000008c;
+}
+.card figure img {
+    width: 100%;
+}
+
+.card figure figcaption {
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+
+.btn-horarios {
+    background-color: #04D9D9;
+    color: #fff;
+    margin: 50px;
+    padding: 15px;
+    font-size: 18px;
+    text-align: center;
+    width: 200px;
+}
+
+.btn-horarios:hover {
+    color: #0000008c;
+    font-weight: 700;
+}
+
+/* contatos */
+
+.contatos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    padding-bottom: 40px;
+}
+
+.rodape {
+    background-color: #0E7373;
+    padding-bottom: 60px;
+    color: #fff;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.rodape img {
+    padding-top: 20px;
+}
+
+.container {
+    width: 1024px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Responsividade */
+
+@media (max-width: 428px){
+
+/* topo */
+
+    .container-topo{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding-bottom: 20px;
+    }
+    .menu-topo a{
+        font-size: 12px;
+    }
+
+    .menu-topo a:hover {
+        color: #0000008c;
+    }
+/* banner */
+    .container-banner {
+        height: 200px;
+    }
+
+    .container-titulo-banner h1 {
+        font-size: 20px ;
+    }
+
+    .container-titulo h3, .container-lista h3 {
+        font-size: 18px;
+        padding-top: 9px;
+    }
+
+    .container-titulo p {
+        width: 280px;
+        font-size: 12px;
+    }
+/* sobre */
+.medico-img {
+    display: none;
+}
+
+    /* cards */
+.container-cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.card figure figcaption {
+    font-size: 16px;
+}
+.btn-horarios {
+font-size: 14px;
+width: 130px;
+}
+/* contatos */
+    .contatos iframe {
+        width: 300px;
+        height: 200px;
+    }
+    
+/* rodape */
+
+    .container {
+        height: 200px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .container p {
+        font-size: 12px;
+        margin-left: 50px;
+        width: 280px;
+    }
+
+    .container img {
+        width: 100px;
+        margin-left: 150px;
+    }
+}
