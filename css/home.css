@@ -199,7 +199,7 @@ body {
     position: relative;
 }
 .container-button a {
-    background-image: url(/assets/de-volta-ao-topo.png);
+    background-image: url("../assets/de-volta-ao-topo.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 70px;
