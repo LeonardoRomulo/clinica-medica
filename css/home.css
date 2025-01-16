@@ -241,6 +241,7 @@ body {
 
 /* Responsividade */
 
+/* telas pequenas */
 @media (max-width: 428px) {
 
     /* topo */
@@ -352,6 +353,8 @@ body {
     }
 }
 
+/* telas médias */
+
 @media (max-width: 810px) {
     body, html {
         overflow-x: hidden;
@@ -398,6 +401,8 @@ body {
     }
 }
 
+
+/* telas grandes */
 @media (max-width: 1024px) {
     body, html {
         overflow-x: hidden;
