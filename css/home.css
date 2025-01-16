@@ -255,6 +255,8 @@ body {
         gap: 10px;
         padding-bottom: 50px;
     }
+    .menu-topo a{
+        font-size: 16px;
 
     .menu-topo a {
         font-size: 16px;
