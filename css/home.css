@@ -155,6 +155,9 @@ body {
     border: 1px sooid #1d1d1d1d;
     box-shadow: -5px 5px 5px #0000008c;
 }
+.card-quebra {
+    margin-top: 35px;
+}
 .card figure img {
     width: 100%;
 }
@@ -191,6 +194,22 @@ body {
     padding-bottom: 40px;
 }
 
+/* botão-topo */
+.container-button {
+    position: relative;
+}
+.container-button a {
+    background-image: url(/assets/de-volta-ao-topo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+    right: -1900px;
+}
+
+/* rodape */
 .rodape {
     background-color: #0E7373;
     padding-bottom: 60px;
@@ -202,6 +221,7 @@ body {
     align-items: center;
     gap: 20px;
 }
+
 .rodape img {
     padding-top: 20px;
 }
@@ -218,13 +238,14 @@ body {
 
 /* Responsividade */
 
-@media (max-width: 428px){
+@media (max-width: 428px) {
 
-/* topo */
+    /* topo */
     body, html {
-        overflow-x: hidden ;
+        overflow-x: hidden;
     }
-    .container-topo{
+
+    .container-topo {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -232,64 +253,86 @@ body {
         justify-content: center;
         flex-wrap: wrap;
         gap: 10px;
-        padding-bottom: 20px;
+        padding-bottom: 50px;
     }
-    .menu-topo a{
-        font-size: 12px;
+
+    .menu-topo a {
+        font-size: 16px;
+
     }
 
     .menu-topo a:hover {
         color: #0000008c;
     }
-/* banner */
+
+    /* banner */
     .container-banner {
         height: 200px;
     }
 
     .container-titulo-banner h1 {
-        font-size: 20px ;
+        font-size: 20px;
         padding-left: 10px;
     }
 
     .container-titulo h3, .container-lista h3 {
-        font-size: 18px;
-        padding-top: 9px;
+        font-size: 14px;
+        padding: 9px 0 9px 9px;
     }
 
     .container-titulo p {
         width: 280px;
         font-size: 12px;
     }
-/* sobre */
-.medico-img {
-    display: none;
-}
+
+    /* sobre */
+    .medico-img {
+        display: none;
+    }
 
     /* cards */
-.container-cards {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
+    .container-cards {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
 
-.card {
-    margin: 0;
-}
-.card figure figcaption {
-    font-size: 16px;
-}
-.btn-horarios {
-font-size: 14px;
-width: 130px;
-}
-/* contatos */
+    .card {
+        margin: 0;
+    }
+
+    .card figure figcaption {
+        font-size: 16px;
+    }
+
+    .btn-horarios {
+        font-size: 14px;
+        width: 130px;
+    }
+
+    /* contatos */
     .contatos iframe {
         width: 300px;
         height: 200px;
     }
-    
-/* rodape */
+
+    /* botão para voltar ao topo */
+
+
+    .de-volta-ao-topo img {
+        width: 40px;
+        height: 40px;
+    }
+.container-button a {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    bottom: 10px;
+    left: 10px;
+    z-index: 1000;
+}
+    /* rodape */
 
     .container {
         height: 200px;
