@@ -155,9 +155,11 @@ body {
     border: 1px sooid #1d1d1d1d;
     box-shadow: -5px 5px 5px #0000008c;
 }
+
 .card-quebra {
     margin-top: 35px;
 }
+
 .card figure img {
     width: 100%;
 }
@@ -198,6 +200,7 @@ body {
 .container-button {
     position: relative;
 }
+
 .container-button a {
     background-image: url("../assets/de-volta-ao-topo.png");
     background-repeat: no-repeat;
@@ -255,7 +258,13 @@ body {
         gap: 10px;
         padding-bottom: 50px;
     }
-    .menu-topo a{
+
+    .menu-topo ul {
+        border-top: 1px solid #b6acac;
+        padding-top: 20px;
+    }
+
+    .menu-topo a {
         font-size: 16px;
     }
 
@@ -313,14 +322,15 @@ body {
 
     /* botão para voltar ao topo */
 
-.container-button a {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    bottom: 10px;
-    left: 10px;
-    z-index: 1000;
-}
+    .container-button a {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        bottom: 10px;
+        left: 10px;
+        z-index: 1000;
+    }
+
     /* rodape */
 
     .container {
@@ -339,5 +349,81 @@ body {
     .container img {
         width: 100px;
         margin-left: 150px;
+    }
+}
+
+@media (max-width: 810px) {
+    body, html {
+        overflow-x: hidden;
+    }
+
+    .container-topo {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .container-titulo-banner h1 {
+        font-size: 30px;
+        padding-left: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-banner {
+        height: 300px;
+    }
+
+    .medico-img {
+        display: none;
+    }
+
+    .container-titulo p {
+        max-width: 600px;
+
+    }
+
+    iframe {
+        width: 600px;
+    }
+
+    .container img {
+        margin-right: 190px;
+    }
+
+    .container p {
+        padding: 0;
+        margin-right: 190px;
+    }
+}
+
+@media (max-width: 1024px) {
+    body, html {
+        overflow-x: hidden;
+    }
+
+    .container-topo {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .container-banner {
+        height: 400px;
+    }
+
+    .container-banner h1 {
+        font-size: 36px;
+        margin-left: 20px;
+    }
+
+    iframe {
+        width: 700px;
+    }
+}
+
+@media (min-width: 1025px ){
+    .container-banner {
+        height: 500px;
     }
 }
