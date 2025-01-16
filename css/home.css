@@ -399,6 +399,21 @@ body {
         padding: 0;
         margin-right: 190px;
     }
+
+    .container-button {
+        position: relative;
+    }
+    
+    .container-button a {
+        background-image: url("../assets/de-volta-ao-topo.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
 }
 
 
@@ -425,10 +440,39 @@ body {
     iframe {
         width: 700px;
     }
+
+    .container-button {
+        position: relative;
+    }
+    
+    .container-button a {
+        background-image: url("../assets/de-volta-ao-topo.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        bottom: 0;
+        left: 0px;
+    }
 }
 
 @media (min-width: 1025px ){
     .container-banner {
         height: 500px;
+    }
+    .container-button {
+        position: relative;
+    }
+    
+    .container-button a {
+        background-image: url("../assets/de-volta-ao-topo.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
     }
 }
