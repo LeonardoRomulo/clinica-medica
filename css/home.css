@@ -197,9 +197,6 @@ body {
 }
 
 /* botão-topo */
-.container-button {
-    position: relative;
-}
 
 .container-button a {
     background-image: url("../assets/de-volta-ao-topo.png");
@@ -207,9 +204,9 @@ body {
     background-size: cover;
     width: 70px;
     height: 70px;
-    position: absolute;
+    position: fixed;
     bottom: 0;
-    right: -1900px;
+    left: 0;
 }
 
 /* rodape */
@@ -410,7 +407,7 @@ body {
         background-size: cover;
         width: 30px;
         height: 30px;
-        position: absolute;
+        position: fixed;
         bottom: 0;
         left: 0;
     }
@@ -451,9 +448,9 @@ body {
         background-size: cover;
         width: 70px;
         height: 70px;
-        position: absolute;
-        bottom: 0;
-        left: 0px;
+        position: fixed;
+        bottom: 200px;
+        left: 0;
     }
 }
 
@@ -471,8 +468,8 @@ body {
         background-size: cover;
         width: 70px;
         height: 70px;
-        position: absolute;
-        bottom: 0;
+        position: fixed;
+        bottom: 200px;
         left: 0;
     }
 }

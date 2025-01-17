@@ -6,11 +6,12 @@
 }
 
 .limitar-secao {
-    max-width: 1024px;
+    width: 1024px;
 }
 
 body {
     font-family: 'source sans pro', sans-serif;
+    color: #0000008c;
 }
 
 /* Topo */
@@ -43,16 +44,107 @@ body {
     font-size: 20px;
     font-weight: bold;
 }
-
-/* contatos */
-
-.contatos {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: column wrap;
-    padding-bottom: 40px;
+.menu-topo a:hover {
+    color: #0000008c;
 }
+
+
+/* links */
+.links-especialidades {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+
+.container-links-especialidades a{
+    border-bottom: 1px solid #04D9D9;
+    margin-right: 9px;
+    color: #0000008c;
+    font-weight: 700;
+}
+
+.container-links-especialidades a:hover {
+    color: #0d6e71
+}
+
+/* seções especialidades */
+.especialidades {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 60px;
+}
+.container-titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-titulo h3 {
+    text-align: center;
+    font-size: 30px;
+    color: #0000008c;
+    padding: 20px;
+}
+.container-titulo p {
+    max-width: 750px;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #0000008c;
+}
+
+
+.container-img  figure img{
+    width: 400px;
+    height: 300px;
+}
+.container-horarios {
+    display: flex;
+}
+
+
+/* tabela */
+
+table {
+    border-spacing: 0;
+    width: 600px;
+    height: 300px;
+}
+
+ table thead tr {
+    background-color: #04D9D9;
+}
+table thead tr th {
+   height: 50px;
+    color: #fff;
+    text-align: justify;
+}
+
+table tbody tr:nth-of-type(2n+1){
+    background-color: #cdcdcd;
+}
+
+/* botão-topo */
+
+.container-button a {
+    background-image: url("../assets/de-volta-ao-topo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    /* position: absolute; */
+    bottom: 0;
+    left: 0;
+}
+
+
+/* rodape */
 
 .rodape {
     background-color: #0E7373;
@@ -70,10 +162,94 @@ body {
 }
 
 .container {
-    width: 1024px;
+    /* width: 1024px; */
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
     gap: 20px;
+}
+
+/* * Responsivo */ 
+
+@media (max-width: 428px) {
+
+    body, html {
+        overflow-x: hidden;
+    }
+
+    .container-topo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding-bottom: 50px;
+    }
+
+    .menu-topo ul {
+        border-top: 1px solid #b6acac;
+        padding-top: 20px;
+    }
+
+    .menu-topo a {
+        font-size: 16px;
+    }
+.links-especialidades {
+    margin-left: 10px;
+    width: 400px;
+}
+.links-especialidades a {
+    font-size: 12px;
+}
+
+.container-titulo-link h3 {
+    width: 300px;
+    margin: 20px 0 0 30px;
+}   
+    .container-titulo{
+        margin-top: -60px;
+    }
+    .container-titulo h3 {
+        font-size: 14px;
+    }
+
+    .container-titulo p {
+        width: 280px;
+        font-size: 12px;
+    }
+
+    .container-img-especialidades img {
+        display: none;
+    }
+
+table {
+    width: 340px;
+    height: 300px;
+    margin: 0 340px;
+    font-size: 11px;
+    border: 1px solid #0d6e71;
+    }
+     /* rodape */
+
+     .container {
+        margin: 0;
+        height: 200px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .container p {
+        font-size: 12px;
+        margin-left: 55px;
+        width: 280px;
+    }
+
+    .container img {
+        width: 100px;
+        margin-left: 150px;
+    }
 }
