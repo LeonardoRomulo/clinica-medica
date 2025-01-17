@@ -44,6 +44,7 @@ body {
     font-size: 20px;
     font-weight: bold;
 }
+
 .menu-topo a:hover {
     color: #0000008c;
 }
@@ -51,15 +52,16 @@ body {
 
 /* links */
 .links-especialidades {
+    min-width: 1024px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px 0;
+    margin: 20px 0;
 }
 
 
-.container-links-especialidades a{
+.container-links-especialidades a {
     border-bottom: 1px solid #04D9D9;
     margin-right: 9px;
     color: #0000008c;
@@ -70,6 +72,10 @@ body {
     color: #0d6e71
 }
 
+.container-titulo-link {
+    padding-top: 40px;
+}
+
 /* seções especialidades */
 .especialidades {
     display: flex;
@@ -78,18 +84,21 @@ body {
     align-items: center;
     margin: 60px;
 }
+
 .container-titulo {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .container-titulo h3 {
     text-align: center;
     font-size: 30px;
     color: #0000008c;
     padding: 20px;
 }
+
 .container-titulo p {
     max-width: 750px;
     font-size: 20px;
@@ -99,10 +108,11 @@ body {
 }
 
 
-.container-img-especialidades  figure img{
+.container-img-especialidades figure img {
     width: 400px;
     height: 300px;
 }
+
 .container-horarios {
     display: flex;
 }
@@ -115,17 +125,20 @@ table {
     width: 600px;
     height: 300px;
 }
-
- table thead tr {
+.container-tabela  p {
+    padding-left: 10px;
+}
+.container-tabela thead tr {
     background-color: #04D9D9;
 }
-table thead tr th {
-   height: 50px;
+
+.container-tabela thead tr th {
+    height: 50px;
     color: #fff;
     text-align: justify;
 }
 
-table tbody tr:nth-of-type(2n+1){
+.container-tabela tbody tr:nth-of-type(2n+1) {
     background-color: #cdcdcd;
 }
 
@@ -157,6 +170,7 @@ table tbody tr:nth-of-type(2n+1){
     align-items: center;
     gap: 20px;
 }
+
 .rodape img {
     padding-top: 20px;
 }
@@ -170,7 +184,7 @@ table tbody tr:nth-of-type(2n+1){
     gap: 20px;
 }
 
-/* * Responsivo */ 
+/* * Responsivo */
 
 @media (max-width: 428px) {
 
@@ -197,21 +211,25 @@ table tbody tr:nth-of-type(2n+1){
     .menu-topo a {
         font-size: 16px;
     }
-.links-especialidades {
-    margin-left: 10px;
-    width: 400px;
-}
-.links-especialidades a {
-    font-size: 12px;
-}
 
-.container-titulo-link h3 {
-    width: 300px;
-    margin: 20px 0 0 30px;
-}   
-    .container-titulo{
+    .links-especialidades {
+        margin-left: 10px;
+        width: 400px;
+    }
+
+    .links-especialidades a {
+        font-size: 12px;
+    }
+
+    .container-titulo-link h3 {
+        width: 300px;
+        margin: 20px 0 0 30px;
+    }
+
+    .container-titulo {
         margin-top: -60px;
     }
+
     .container-titulo h3 {
         font-size: 14px;
     }
@@ -225,16 +243,17 @@ table tbody tr:nth-of-type(2n+1){
         display: none;
     }
 
-table {
-    width: 340px;
-    height: 300px;
-    margin: 0 340px;
-    font-size: 11px;
-    border: 1px solid #0d6e71;
+    table {
+        width: 418px;
+        height: 300px;
+        margin: 0 306px;
+        font-size: 11px;
     }
-     /* rodape */
 
-     .container {
+
+    /* rodape */
+
+    .container {
         margin: 0;
         height: 200px;
         display: flex;
@@ -251,5 +270,37 @@ table {
     .container img {
         width: 100px;
         margin-left: 150px;
+    }
+}
+
+@media (max-width:768px){
+    body, html {
+        overflow-x: hidden;
+    }
+
+    .container-topo {
+        display: flex;
+        justify-content: start;
+        gap: 200px;
+        padding-left: 30px;
+    }
+
+    .container-titulo-link h3 {
+       margin: 40px 40px 0 0;
+    }
+
+    .container-titulo h3{
+        margin-top: -50px;
+    }
+    .container-img-especialidades img {
+        display: none;
+    }
+
+    table {
+        margin-left: 215px;
+    }
+
+    .container-img-especialidades img {
+        display: none;
     }
 }
