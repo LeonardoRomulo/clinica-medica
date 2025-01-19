@@ -1,314 +1,97 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-}
+/* seção especialistas tabelas */
 
-.limitar-secao {
-    width: 1024px;
-}
-
-body {
-    font-family: 'source sans pro', sans-serif;
-    color: #0000008c;
-}
-
-/* Topo */
-
-.topo {
-    width: 100%;
-    background-color: aqua;
-}
-
-.container-topo {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 auto;
-}
-
-.menu-topo ul {
-    display: flex;
-    /* justify-content: space-evenly; */
-    align-items: center;
-    gap: 15px;
-}
-
-.menu-topo ul li {
-    list-style: none;
-}
-
-.menu-topo a {
-    color: #fff;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.menu-topo a:hover {
-    color: #0000008c;
-}
-
-
-/* links */
-.links-especialidades {
-    min-width: 1024px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
-}
-
-
-.container-links-especialidades a {
-    border-bottom: 1px solid #04D9D9;
-    margin-right: 9px;
-    color: #0000008c;
-    font-weight: 700;
-}
-
-.container-links-especialidades a:hover {
-    color: #0d6e71
-}
-
-.container-titulo-link {
-    padding-top: 40px;
-}
-
-/* seções especialidades */
-.especialidades {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 60px;
+.sessao-especialidade {
+    margin-top: 40px;
 }
 
 .container-titulo {
+    padding: 0 20px;
+}
+
+/*  links de especialidades */
+.conteiner-links-especialidades {
+    padding: 0 20px;
+    text-align: center;
+}
+
+.links-especialidades {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-}
-
-.container-titulo h3 {
+    flex-wrap: wrap;
+    margin-top: 20px;
     text-align: center;
-    font-size: 30px;
-    color: #0000008c;
-    padding: 20px;
 }
 
-.container-titulo p {
-    max-width: 750px;
-    font-size: 20px;
-    text-align: center;
-    margin-bottom: 25px;
-    color: #0000008c;
+.link-especialidade {
+    text-decoration: none;
+    color: #000;
+    border-bottom: 2px solid #00cad1;
+    margin: 0 10px 10px;
+    font-size: 18px;
 }
 
-
-.container-img-especialidades figure img {
-    width: 400px;
-    height: 300px;
+.link-especialidade:hover {
+    color: #0d6e71;
 }
 
-.container-horarios {
+/* tabelas */
+.box-tabela-especialista {
     display: flex;
+    height: 240px;
+    padding: 0 20px;
 }
 
+.box-tabela-especialista img {
+    width: 30%;
+    height: 100%;
+}
 
-/* tabela */
-
-table {
+.tabela-especialistas {
     border-spacing: 0;
-    width: 600px;
-    height: 300px;
+    text-align: left;
+    width: 70%;
+    height: 100%;
 }
 
-.container-tabela p {
-    padding-left: 10px;
-}
-
-.container-tabela thead tr {
-    background-color: #04D9D9;
-}
-
-.container-tabela thead tr th {
-    height: 50px;
+.tabela-especialistas thead tr {
+    background-color: #00cad1;
     color: #fff;
-    text-align: justify;
 }
-.container-tabela tbody tr {
-    background-color:  #F1F1F1;
 
+.tabela-especialistas tr {
+    background-color: #f1f1f1;
+    color: #585757;
+    font-weight: 500;
 }
-.container-tabela tbody tr:nth-of-type(2n+1) {
+
+.tabela-especialistas tbody tr:nth-of-type(2n+1) {
     background-color: #cdcdcd;
+    border: 1px solid #f1f1f1;
 }
 
-/* botão-topo */
-
-.container-button a {
-    background-image: url("../assets/de-volta-ao-topo.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 70px;
-    height: 70px;
-    position: fixed;
-    /* position: absolute; */
-    bottom: 0;
-    left: 0;
+.tabela-especialistas th, .tabela-especialistas td {
+    padding: 10px;
 }
 
 
-/* rodape */
 
-.rodape {
-    background-color: #0E7373;
-    padding-bottom: 60px;
-    color: #fff;
-
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+@media (max-width:475px) {
+    .box-tabela-especialista {
+        padding: 0;
+    }
 }
 
-.rodape img {
-    padding-top: 20px;
-}
-
-.container {
-    /* width: 1024px; */
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-/* * Responsivo */
-
-@media (max-width: 428px) {
-
-    body, html {
-        overflow-x: hidden;
+@media (max-width: 768px) {
+    .box-tabela-especialista img {
+        display: none;
     }
 
-    .container-topo {
+    .tabela-especialistas {
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    }
+
+    .box-tabela-especialista {
+        height: auto;
         justify-content: center;
-        flex-wrap: wrap;
-        gap: 10px;
-        padding-bottom: 50px;
-    }
-
-    .menu-topo ul {
-        border-top: 1px solid #b6acac;
-        padding-top: 20px;
-    }
-
-    .menu-topo {
-        font-size: 16px;
-    }
-
-    .container-link {
-        margin-right: 600px;
-        width: 400px;
-        font-size: 12px;
-    }
-
-    .links-especialidades {
-        font-size: 12px;
-    }
-
-    .container-titulo-link h3 {
-        width: 900px;
-    }
-
-    .container-titulo {
-        margin-top: -60px;
-    }
-
-    .container-titulo h3 {
-        font-size: 14px;
-    }
-
-    .container-titulo p {
-        width: 280px;
-        font-size: 12px;
-    }
-
-    .container-img-especialidades img {
-        display: none;
-    }
-
-    table {
-        width: 360px;
-        margin-left: 332px;
-        font-size: 12px;
-
-    }
-
-
-    /* rodape */
-
-    .container {
-        margin: 0;
-        height: 200px;
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-
-    .container p {
-        font-size: 12px;
-        margin-left: 55px;
-        width: 280px;
-    }
-
-    .container img {
-        width: 100px;
-        margin-left: 150px;
     }
 }
-
-@media (min-width: 429px) and (max-width: 810px) {
-    body, html {
-        overflow-x: hidden;
-    }
-
-    .container-topo {
-        display: flex;
-        justify-content: space-evenly;
-        margin-left: -100px;
-    }
-
-    .container-topo a {
-            font-size: 16px;
-        }
-    }
-    .container-link {
-        width: 700px;
-    }
-    .container-titulo-link h3 {
-        width: 550px;
-    }
-
-    .container-img-especialidades img {
-        display: none;
-    }
-
-    table {
-        margin-right: 150px;
-        margin-left: 215px;
-    }
-
-    .container-img-especialidades img {
-        display: none;
-    }
